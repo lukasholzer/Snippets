@@ -1,0 +1,21 @@
+//  ****************************************************
+//
+//  COLLECTION OF USEFULL SCSS MIXINS
+//
+//  Insert only scss mixins, NO css helper classes, ...
+// 
+//  ****************************************************
+
+
+// 
+//  Prefixing CSS values
+//
+
+$default-prefixes: webkit moz ms o;
+
+@mixin prefix-values($property, $value, $prefixes: $default-prefixes) {
+    @each $prefix in $prefixes {
+        -#{$prefix}-#{$property}: #{$value};
+    }
+    #{$property}: #{$value};
+} 
