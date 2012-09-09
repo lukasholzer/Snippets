@@ -42,3 +42,53 @@ $default-prefixes: webkit moz ms o;
 @mixin box-sizing($boxmodel) {
 	@include prefix-values(box-sizing, $boxmodel);
 }
+
+
+//
+//	CSS 3
+//
+
+@mixin rounded($side, $radius: 4px) {
+	-moz-border-radius-#{$side}: $radius;
+	@include prefix-values(border-#{$side}-radius, $radius, webkit ms o);
+}
+
+@mixin border-radius($radius) {
+	@include prefix-values(border-radius, $radius, webkit moz ms o); 
+}
+
+@mixin border-top-left-radius($radius) {
+	@include rounded(top-left, $radius);
+}
+
+@mixin border-top-right-radius($radius) {
+	@include rounded(top-right, $radius);
+}
+
+@mixin border-bottom-left-radius($radius) {
+	@include rounded(bottom-left, $radius);
+}
+
+@mixin border-bottom-right-radius($radius) {
+	@include rounded(bottom-right, $radius);
+}
+
+@mixin border-top-radius($radius) {
+	@include border-top-left-radius($radius);
+	@include border-top-right-radius($radius);
+}
+
+@mixin border-bottom-radius($radius) {
+	@include border-bottom-left-radius($radius);
+	@include border-bottom-right-radius($radius);
+}
+
+@mixin border-left-radius($radius) {
+	@include border-top-left-radius($radius);
+	@include border-bottom-left-radius($radius);
+}
+
+@mixin border-right-radius($radius) {
+	@include border-top-right-radius($radius);
+	@include border-bottom-right-radius($radius);
+}
