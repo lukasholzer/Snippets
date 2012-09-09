@@ -18,4 +18,27 @@ $default-prefixes: webkit moz ms o;
         -#{$prefix}-#{$property}: #{$value};
     }
     #{$property}: #{$value};
-} 
+}
+
+
+// 
+//  Sizing
+//
+
+@mixin size($height, $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin square($size) {
+  .size($size, $size);
+}
+
+
+// 
+//  Box sizing
+//
+
+@mixin box-sizing($boxmodel) {
+	@include prefix-values(box-sizing, $boxmodel);
+}
