@@ -2,8 +2,14 @@
  * Storage for IE7
  * LocalStorage Polyfill
  *
- * @param maxage
- * @constructor
+ * @usage on DOM READY:
+ * var localStorage = null;
+ * if(window.UserDataStorage && !window.UserDataStorage.testLocalStorage()) {
+ *			localStorage = new window.UserDataStorage();
+ *		} else {
+ *			localStorage = window.localStorage;
+ *		}
+ * }
  */
 function UserDataStorage(maxage)  {
 	var memory = document.createElement("div");
@@ -37,7 +43,3 @@ UserDataStorage.testLocalStorage = function testLocalStorage() {
 		return false;
 	}
 };
-
-if(!UserDataStorage.testLocalStorage()) {
-	window.localStorage = window.localStorage || (window.UserDataStorage && new UserDataStorage());
-}
