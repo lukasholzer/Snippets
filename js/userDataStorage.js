@@ -36,8 +36,8 @@ function UserDataStorage(maxage)  {
 }
 UserDataStorage.testLocalStorage = function testLocalStorage() {
 	try {
-		localStorage.setItem(mod, mod);
-		localStorage.removeItem(mod);
+		localStorage.setItem("userDataStorageTest", "userDataStorageTest");
+		localStorage.removeItem("userDataStorageTest");
 		return true;
 	} catch(e) {
 		return false;
