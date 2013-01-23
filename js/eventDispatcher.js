@@ -14,7 +14,7 @@
  * 		myObject.dispatchEvent("complete", {id: "franz"});
  */
 
-lib.namespace('lib');
+window.lib = window.lib || {};
 lib.eventDispatcher = {
 
 	//public
