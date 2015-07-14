@@ -1,0 +1,49 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    margin: 0 0 10px 0;
+    font-family: Arial;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    background-color: #fbfbfb;
+    border: 1px solid #d9d9d9;
+    border-radius: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -moz-user-select: none;
+    resize: none;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+       -moz-font-smoothing: antialiased;
+        -ms-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+    /*
+    &:focus {
+        insert code for focused state
+    }
+
+    &:disabled, &.disabled {
+        insert code for disabled state
+    }
+
+    &:readonly, &.readonly {
+        insert code for readonly state
+    }
+
+    &.error {
+        insert code for error state
+    }
+    */
+}
