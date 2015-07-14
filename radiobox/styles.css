@@ -22,6 +22,6 @@ input[type="radio"]:checked + label {
 }
 
 input[type="radio"]:focus + label {
-    box-shadow: 0 0 5px 1px rgb(51, 153, 255);
+    outline: 2px solid #599BD5;
     /* add styles when checkbox gets focus */
 }

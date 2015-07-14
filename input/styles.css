@@ -32,6 +32,7 @@ select {
     /*
     &:focus {
         insert code for focused state
+        outline: 2px solid #599BD5;
     }
 
     &:disabled, &.disabled {
