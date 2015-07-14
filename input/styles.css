@@ -28,6 +28,7 @@ select {
        -moz-font-smoothing: antialiased;
         -ms-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    outline: none;
 
     /*
     &:focus {
