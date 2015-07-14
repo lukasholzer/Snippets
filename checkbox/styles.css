@@ -1,0 +1,27 @@
+input[type="checkbox"] {
+    display: block;
+    position: absolute;
+    left: -999em;
+    z-index: 0;
+}
+
+input[type="checkbox"] + label {
+    /* optional - makes label unselectable */ 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    /* add styles when checkbox is unchecked */
+}
+
+input[type="checkbox"]:checked + label {
+    /* add styles when checkbox is checked */
+}
+
+input[type="checkbox"]:focus + label {
+    box-shadow: 0 0 5px 1px rgb(51, 153, 255);
+    /* add styles when checkbox gets focus */
+}
