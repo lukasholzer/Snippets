@@ -28,7 +28,8 @@ select {
        -moz-font-smoothing: antialiased;
         -ms-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    outline: none;
+    outline: 2px solid transparent;
+    transition: outline .2s ease-out;
 
     /*
     &:focus {
@@ -48,4 +49,18 @@ select {
         insert code for error state
     }
     */
+}
+
+/*
+REMOVE when using SCSS!!!!!!!!
+Use "&:focus" above
+*/
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #599BD5;
 }
