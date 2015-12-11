@@ -16,4 +16,4 @@ check `/ui-elements`
 
 check `/helper-functions`
 
-* search needle in string
+* search needle in string and wrap it in a tag
