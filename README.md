@@ -10,7 +10,8 @@ check `/ui-elements`
 * custom styled radio
 * custom styled selectbox
 * pattern for css only mobile sidenav
-* essential input styles 
+* essential input styles
+* hotdog animation for mobile navigations 
 
 ###JavaScript helper functions
 
