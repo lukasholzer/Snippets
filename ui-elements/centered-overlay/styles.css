@@ -1,0 +1,7 @@
+.overlay {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0); /* works IE10+, as a fallback use fixed with and  */ 
+}
