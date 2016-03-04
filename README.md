@@ -11,7 +11,9 @@ check `/ui-elements`
 * custom styled selectbox
 * pattern for css only mobile sidenav
 * essential input styles
-* hotdog animation for mobile navigations 
+* hotdog animation for mobile navigations
+* centered overlay
+* responsive videos  
 
 ###JavaScript helper functions
 
