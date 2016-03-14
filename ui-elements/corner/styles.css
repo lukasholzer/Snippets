@@ -1,0 +1,25 @@
+.corner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.corner__shape {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 200%;
+  background: blue;
+  transform: rotate(45deg) translate3d(-85.4%,0,0);
+}
+
+.corner__body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+}
