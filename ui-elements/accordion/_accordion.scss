@@ -1,0 +1,72 @@
+$blue: lightblue;
+$grey_medium: lightgrey;
+$white: white;
+$black: black;
+
+$spacer: 40px;
+
+.accordion__handle {
+	position: relative;
+	z-index: 1;
+	color: $blue;
+	padding: $spacer;
+	cursor: pointer;
+	margin: 0;
+	transition: background, color 150ms ease-out;
+	border-bottom: 1px solid $grey_medium;
+
+	&:hover {
+		background-color: $blue;
+		color: $white;
+
+		&:after {
+			color: $white;
+		}
+	}
+
+	&:after {
+		color: $black;
+		position: absolute;
+		right: $spacer;
+		content: '>';
+    	line-height: 1.8em;
+    	transition: transform 150ms ease-out;
+	}
+
+	&.active {
+		border-bottom: 1px solid transparent;
+
+		& + .accordion__body {
+			margin-top: 0;
+			border-bottom: 1px solid $grey_medium;
+		}
+
+		&:after {
+			transform: rotate(90deg); 
+		}
+
+		& + .accordion__body {
+			height: auto;
+		    transform: translate3d(0, 0px, 0);
+		    transition: transform 150ms ease-in, opacity 150ms ease-out, height 0ms 0ms linear;
+		    opacity: 1;
+		}
+	}
+
+}
+
+.accordion__body {
+	width: 100%;
+	margin: 0;
+	padding: $spacer/2 $spacer;    
+    overflow: hidden; 
+    height: 0;
+    transition: transform 150ms ease-out, opacity 150ms ease-out, height 0ms 150ms linear;
+    transform: translate3d(0, -50px, 0);
+    opacity: 0;
+
+	& > * {
+		padding: 0;
+		margin: 0;
+	}
+}
